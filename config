@@ -2,10 +2,10 @@
     "layer": "top",
     "position": "top",
     "spacing": 0,
-    "height": 34,
+    "height": 14,
     "modules-left": [
-        //"custom/logo",
         "custom/menu",
+        "custom/firefoxlolmenu", 
         "custom/firefox", 
         "custom/terminal", 
         "custom/pcmanfm", 
@@ -17,6 +17,7 @@
     ],
     "modules-right": [
         "clock",
+        "memory",
 	"battery",	
 	"tray",
         //"memory",
@@ -24,25 +25,30 @@
         "pulseaudio"
     ],
    "custom/firefox": {
-        "format": " ",
+        "format": "www",
         "tooltip": false,
         "on-click": "firefox"
     },
- "custom/terminal": {
-        "format": "   ",
+    "custom/firefoxlolmenu": {
+        "format": " 󰀻  ",
+        "tooltip": false,
+        "on-click": "~/.config/waybar/./menu.sh"
+    },
+"custom/terminal": {
+        "format": "    ",
         "tooltip": false,
         "on-click": "konsole"
     },
   "custom/pcmanfm": {
-        "format": "  ",
+        "format": "   ",
         "tooltip": false,
         "on-click": "pcmanfm"
     },
 
   "custom/hyprpaperconf": {
-        "format": "󰸉  ",
+        "format": "  ",
         "tooltip": false,
-        "on-click": "konsole -e vim ~/.config/hypr/hyprpaper.conf"
+        "on-click": "~/.config/hypr/./change-wallpaper.sh",
     },
 
 
@@ -55,20 +61,23 @@
         "tooltip-format": "{title}"
     },
     "hyprland/workspaces": {
+        "active-only": false,
+        "all-outputs": true,
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
-            "default": "",
-            //"1": "1",
-            //"2": "2",
-            //"3": "3",
-            //"4": "4",
+            "default": "o",
+            "1": "www",
+            "2": "",
+            "3": "",
+            "4": "",
             //"5": "5",
             //"6": "6",
             //"7": "7",
             //"8": "8",
-            //"9": "9",
-            "active": "",
+            "9": " ",
+            "10": "󰐹 ",
+            //"active": "",
             "urgent": "󱓻"
         },
         "persistent_workspaces": {
@@ -76,7 +85,12 @@
             "2": [],
             "3": [],
             "4": [],
-            "5": []
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
         }
     },
     "memory": {
@@ -90,11 +104,11 @@
     "clock": {
         "tooltip-format": "<tt>{calendar}</tt>",
         //"format-alt": "hyprland",
-        "format": "󰃭 {:%a, %d.%m.%y  󱑆  %H:%M}",
+        "format": "{:󰃭   %a, %d.%m.%y    󱑆   %H:%M }",
 	"on-click": "gnome-calendar"
     },
     "network": {
-        "format-wifi" : "󰤨 ",
+        "format-wifi" : " 󰤨 ",
         "format-icons": ["a󰤯","b󰤟","c󰤢","connected to:","e󰤨"],
         "format-ethernet": "f󰀂",
 	//"format-alt" : "g󱛇",
@@ -103,45 +117,25 @@
         "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
 	"tooltip-format-disconn🔇ected": "Disconnected",
 	//"on-click": "xfce4-terminal -e nmtui",
-	//"on-click": "~/.config/rofi/wifi/wifi.sh &",
-        //"on-click-right": "~/.config/rofi/wifi/wifinew.sh &",
 	"interval": 5,
 	"nospacing": 1,
     },
     "pulseaudio": {
-        "format": "󰎈 {volume}%",
-        "format-bluetooth": "󰂰",
         "nospacing": 1,
         "tooltip-format": "Volume : {volume}%",
-        "format-muted": " ",
+        "format-muted": "󰝛 ",
+        "format": "󰎈 {volume}%",
+        "format-bluetooth": "󰂰",
         "format-icons": {
-            "headphone": "",
-            "default": ["󰖀","󰕾",""]
+            "headphone": ""
         },
         "on-click": "pamixer -t",
         "scroll-step": 1
     },
-    "custom/logo": {
-        "format": "  ",
-        "tooltip": false,
-        "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
-    },
     "battery": {
         "format": "󰁹 {capacity}%",
-        "format-icons": {
-            "charging": [
-                "󰢜",
-                "󰂆",
-                "󰂇",
-                "󰂈",
-                "󰢝",
-                "󰂉",
-                "󰢞",
-                "󰂊",
-                "󰂋",
-                "󰂅"
-            ],
-            "default": [
+        "format-charging": "󰁹  {capacity}%",
+           "default": [
                 "󰁺",
                 "󰁻",
                 "󰁼",
@@ -161,12 +155,13 @@
             "critical": 10
         },
         "tooltip": false,
-	"on-click": "~/.config/hypr/brightness-up.sh",
-	"on-click-right": "~/.config/hypr/brightness-down.sh"
+	"on-click": "brightnessctl set 3%+",
+	"on-click-right": "brightnessctl set 3%-"
     },
     "custom/menu": {
         "format": "󰀻",
         "tooltip": false,
-        "on-click": "rofi -show drun"
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi"
     }
 }
