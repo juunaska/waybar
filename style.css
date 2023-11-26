@@ -76,8 +76,8 @@ window#waybar.hidden {
   color: #dcdcdc;
   background-color: #444444;
   border-radius: 14px;
-
-
+  padding: 0px 14px;
+  margin: 8px 6px;
 }
 
 #memory {
@@ -99,8 +99,8 @@ window#waybar.hidden {
 }
 
 #battery {
-  color: #21D49E;
-  background-color: #444444;
+  color: #1f1f1f;
+  background-color: #dcdcdc;
   border-radius: 14px; 
   opacity: 1;
 	}
