@@ -5,16 +5,17 @@
     "height": 14,
     "modules-left": [
     	"custom/menu",
-        "hyprland/workspaces"
     ],
     "modules-center": [
+    "hyprland/workspaces",
    
     ],
     "modules-right": [
-	"battery",
 	"network",
 	"pulseaudio",
-        "clock"
+        "clock",
+	"battery",
+        "custom/swaync"
     ],
 
     "custom/menu": {
@@ -31,8 +32,8 @@
         "on-click": "activate",
         "format": "{icon}",
         "format-icons": {
-            "default": "",
-            "active": "󰟻",
+            "default": " ",
+            "active": " ",
             "urgent": "󱓻"
         },
         "persistent_workspaces": {
@@ -56,7 +57,12 @@
         "tooltip-format": "<tt>{calendar}</tt>",
         //"format-alt": "hyprland",
         "format": "{:%a %d.%m.%y 󰁥 %H:%M}",
-	"on-click": "hyprctl notify -1 3000 'rgb(c15000)' 'Calendar launched' && gnome-calendar"
+	"on-click": "hyprctl notify -1 3000 'rgb(21D49E)' 'Calendar launched' && gnome-calendar"
+    },
+
+   "custom/swaync": {
+        "format": "menu",
+	"on-click": "swaync-client -t"
     },
 
 
@@ -68,7 +74,7 @@
 	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
 	"tooltip-format-disconn🔇ected": "Disconnected",
-	//"on-click": "xfce4-terminal -e nmtui",
+	"on-click": "nm-connection-editor",
 	"interval": 5,
 	"nospacing": 1,
     },
@@ -83,7 +89,7 @@
         "format-icons": {
             "headphone": ""
         },
-        "on-click": "pamixer -t && hyprctl notify -1 2500 'rgb(c15000)' 'Audio muted/unmuted'",
+        "on-click": "pamixer -t && hyprctl notify -1 2500 'rgb(21D49E)' 'Audio muted/unmuted'",
         "scroll-step": 1
     },
  

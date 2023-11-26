@@ -4,7 +4,7 @@
   min-height: 0;
   font-family: CaskaydiaCove NF SemiBold;
   font-size: 15;
-  color: #ffffff;
+  color: #444444;
 }
 
 window#waybar {
@@ -12,7 +12,7 @@ window#waybar {
   background-color: #242424;
   transition-property: background-color;
   transition-duration: 0.5s;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 window#waybar.hidden {
@@ -22,22 +22,27 @@ window#waybar.hidden {
 
 #workspaces {
   background-color: transparent;
+  margin: 0px 0px;
 }
 
 #workspaces button {
   all: initial; /* Remove GTK theme values (waybar #1351) */
   min-width: 0; /* Fix weird spacing in materia (waybar #450) */
   box-shadow: inset 0 -3px transparent; /* Use box-shadow instead of border so the text isn't offset */
-  padding: 0px 18px;
-  margin: 6px 3px;
+  padding: 0px 14px;
+  margin: 10px 6px;
   border-radius: 4px;
-  background-color: transparent;
+  background-color: #333333;
+  border-radius: 14px;
   color: #cdd6f4;
 }
 
 #workspaces button.active {
   color: #ff9e9f;
-  background-color: transparent
+  background-color: #dcdcdc;
+  border-radius: 14px;
+  padding: 0px 14px;
+  margin: 8px 6px;
 }
 
 #workspaces button:hover {
@@ -45,6 +50,7 @@ window#waybar.hidden {
  text-shadow: inherit;
  color: #ff9e9f;
  background-color: #666666;
+ border-radius: 14px;
 }
 
 #workspaces button.urgent {
@@ -57,6 +63,7 @@ window#waybar.hidden {
 #pulseaudio,
 #network,
 #clock,
+#custom-swaync,
 #tray {
   border-radius: 4px;
   margin: 6px 3px;
@@ -66,8 +73,9 @@ window#waybar.hidden {
 }
 
 #custom-menu {
-  color: #1f1f1f;
-  background-color: #dcdcdc;
+  color: #dcdcdc;
+  background-color: #444444;
+  border-radius: 14px;
 
 
 }
@@ -80,12 +88,20 @@ window#waybar.hidden {
 #clock {
   color: #ffffff;
   background-color: transparent;
- 
-
+  padding: 6px 6px;
 }
+
+#custom-swaync {
+  color: #dcdcdc;
+  background-color: #444444;
+  border-radius: 14;
+  padding: 6px 22px;
+}
+
 #battery {
-  color: #2f2f2f;
-  background-color: #dcdcdc;
+  color: #21D49E;
+  background-color: #444444;
+  border-radius: 14px; 
   opacity: 1;
 	}
 	@keyframes blink {
@@ -107,22 +123,24 @@ window#waybar.hidden {
 	}
 	#battery.charging {
 	  color: #1c1c1c;
-	  background-color: #ff9e9f;
+	  background-color: #21d49e;
 	}
 
 
 
 #network {
-  color: #2f2f2f;
-  background-color: #dcdcdc;
+  color: #dcdcdc;
+  background-color: #d93A00;
   padding-right: 19px;
+  border-radius: 14px;
 }
 
 #pulseaudio {
 
-  color: #2f2f2f;
-  background-color: #dcdcdc;
+  color: #dcdcdc;
+  background-color: #ED8C29;
   padding-right: 15;
+  border-radius: 14px;
 }
 
 tooltip {
