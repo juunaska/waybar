@@ -3,13 +3,12 @@
   border-radius: 0;
   min-height: 0;
   font-family: CaskaydiaCove NF SemiBold;
-  font-size: 15;
+  font-size: 14;
   color: #444444;
 }
 
 window#waybar {
-  /*background-color: #5C9383;*/
-  background-color: #242424;
+  background-color: #252528;
   transition-property: background-color;
   transition-duration: 0.5s;
   opacity: 1.0;
