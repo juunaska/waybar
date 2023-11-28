@@ -11,18 +11,27 @@
    
     ],
     "modules-right": [
+        "clock",
 	"network",
 	"pulseaudio",
-        "clock",
 	"battery",
-        "custom/swaync"
+        "custom/swaync",
+    "custom/specialworkspace"
     ],
 
     "custom/menu": {
-        "format": "󰀻",
+        "format": "Rofi",
         "tooltip": false,
         "on-click": "~/.config/waybar/./menu.sh"
     },
+
+
+    "custom/specialworkspace": {
+        "format": "󰐹",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch togglespecialworkspace special"
+    },
+
 
 
 
@@ -56,12 +65,12 @@
    "clock": {
         "tooltip-format": "<tt>{calendar}</tt>",
         //"format-alt": "hyprland",
-        "format": "{:%a %d.%m.%y 󰁥 %H:%M}",
-	"on-click": "hyprctl notify -1 3000 'rgb(21D49E)' 'Calendar launched' && gnome-calendar"
+        "format": "{:%a %d.%m.%y >>-> %H:%M}",
+	"on-click": "hyprctl notify -1 1200 'rgb(21D49E)' 'Calendar launched' && gnome-calendar"
     },
 
    "custom/swaync": {
-        "format": ":",
+        "format": "",
 	"on-click": "swaync-client -t "
     },
 
@@ -89,7 +98,7 @@
         "format-icons": {
             "headphone": ""
         },
-        "on-click": "pamixer -t && hyprctl notify -1 2500 'rgb(21D49E)' 'Audio muted/unmuted'",
+        "on-click": "pamixer -t && hyprctl notify -1 1200 'rgb(21D49E)' 'Audio muted/unmuted'",
         "scroll-step": 1
     },
  
@@ -98,8 +107,8 @@
 
 
    "battery": {
-        "format":"{capacity}% 󰁹",
-        "format-charging": "{capacity}",
+        "format":"  {capacity}%",
+        "format-charging": "  {capacity}%",
         },
         "format-full": "",
         "interval": 5,
