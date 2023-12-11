@@ -4,5 +4,5 @@ if pgrep -x "waybar" > /dev/null
 then
     killall waybar
 else
-    /home/test/.config/waybar/./waybar-sleep.sh
+    waybar -c ~/.config/waybar/themes/labwc-black/config -s ~/.config/waybar/themes/labwc-black/style.css &
 fi
