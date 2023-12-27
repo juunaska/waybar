@@ -1,19 +1,19 @@
 * {
   border: none;
-  margin: 4px 4px;
+  margin: 0px 4px;
   border-radius: 6;
   min-height: 0;
 /*  font-family: CaskaydiaCove NF SemiBold;*/
   font-family: "Hack Nerd Font";
   font-size: 20;
-  color: #d2cef3;
+  color: #000000;
 }
 
 window#waybar {
   background-color: transparent;
   transition-property: background-color;
   transition-duration: 0.5s;
-  opacity: 1;
+  opacity: 0.82;
 }
 
 window#waybar.hidden {
@@ -22,8 +22,8 @@ window#waybar.hidden {
 
 
 #workspaces {
- color: #d2cef3;
-  background-color: #17161d;
+ color: #ff7824;
+  background-color: transparent;
   padding: 0px 9px;
   margin: 0px 9px;
   border-radius: 16px;
@@ -35,13 +35,13 @@ window#waybar.hidden {
 #workspaces button {
   all: initial; /* Remove GTK theme values (waybar #1351) */
   min-width: 0; /* Fix weird spacing in materia (waybar #450) */
-  box-shadow: inset 0 -3px #17161d; /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent; /* Use box-shadow instead of border so the text isn't offset */
   padding: 0px 9px;
   margin: 1px 1px;
   border-radius: 6px;
   background-color: transparent;
   border-radius: 6px;
-  color: #d2cef3;
+  color: #ff7824;
 }
 
 #workspaces button.active {
@@ -56,7 +56,7 @@ window#waybar.hidden {
  box-shadow: inherit;
  text-shadow: inherit;
 
-  color: #d2cef3;
+  color: #ff7824;
   background-color: #17161d;
   border-radius: 6px;
   padding: 0px 9px;
@@ -85,7 +85,7 @@ window#waybar.hidden {
 }
 
 #custom-menu {
-  color: #d2cef3;
+  color: #ff7824;
   background-color: #17161d;
   border-radius: 6px;
   padding: 0px 14px;
@@ -93,8 +93,8 @@ window#waybar.hidden {
 }
 
 #custom-specialworkspace {
-  color: #d2cef3;
-  background-color: #17161d;
+  background-color: #ff7824;
+  color: #17161d;
   border-radius: 16px;
   padding: 0px 14px;
   margin: 0px 9px;
@@ -108,7 +108,7 @@ window#waybar.hidden {
 }
 
 #clock {
-  background-color: #d2cef3;
+  background-color: #ff7824;
   color: #17161d;
   padding: 0px 9px;
   margin: 0px 0px;
@@ -120,8 +120,8 @@ window#waybar.hidden {
 }
 
 #custom-swaync {
-  color: #d2cef3;
-  background-color: #17161d;
+  background-color: #ff7824;
+  color: #17161d;
   font-size: 20;
   padding: 0px 10px;
   padding-right: 12px;
@@ -133,7 +133,7 @@ window#waybar.hidden {
   color: #1f1f1f;
   font-size: 14;
   font-family: Hack Nerd Font;
-  background-color: #d2cef3;
+  background-color: #ff7824;
   border-radius: 16px; 
   margin: 0px 0px;
   margin-right: 450px;
@@ -158,14 +158,14 @@ window#waybar.hidden {
 	}
 	#battery.charging {
 	  color: #1f1f1f;
-	  background-color: #d2cef3;
+	  background-color: #ff7824;
 	}
 
 
 
 #network {
-  color: #d2cef3;
-  background-color: #17161d;
+  background-color: #ff7824;
+  color: #17161d;
   padding-right: 19px;
   border-radius: 16px;
   margin: 0px 0px;
@@ -174,8 +174,8 @@ window#waybar.hidden {
 
 #pulseaudio {
 
-  color: #d2cef3;
-  background-color: #17161d;
+  background-color: #ff7824;
+  color: #17161d;
   padding-right: 15;
   border-radius: 16px;
   font-size: 14;
@@ -184,10 +184,10 @@ window#waybar.hidden {
 tooltip {
 border-radius: 6px;
 padding: 1px;
-background-color: #d2cef3;
+background-color: #ff7824;
 }
 
 tooltip label {
 padding: 49px;
-background-color: #d2cef3;
+background-color: #ff7824;
 }
