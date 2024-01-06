@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+
+<menu id="root-menu" label="root-menu">
+		<item label="Firefox Web Browser" icon="firefox">
+			<action name="Execute"><command>/usr/lib/firefox/firefox</command></action>
+		</item>
+
+
+		<item label="Pcmanfm" icon="(null)">
+			<action name="Execute"><command>pcmanfm</command></action>
+		</item>
+	
+		<item label="Kitty" icon="(null)">
+			<action name="Execute"><command>kitty</command></action>
+		</item>
+	
+
+		<item label="pyradio" icon="(null)">
+			<action name="Execute"><command>/home/test/pyradio.sh</command></action>
+		</item>
+
+
+
+
+
+	<menu id="Accessories" label="Accessories">
+		<item label="Gammastep Indicator" icon="gammastep">
+			<action name="Execute"><command>gammastep-indicator</command></action>
+		</item>
+		<item label="Icon picker" icon="nwg-icon-picker">
+			<action name="Execute"><command>nwg-icon-picker</command></action>
+		</item>
+		<item label="nvPY" icon="/usr/lib/python2.7/site-packages/nvpy/icons/nvpy.gif">
+			<action name="Execute"><command>nvpy</command></action>
+		</item>
+		<item label="Onboard" icon="onboard">
+			<action name="Execute"><command>onboard</command></action>
+		</item>
+		<item label="Onboard Settings" icon="onboard">
+			<action name="Execute"><command>onboard-settings</command></action>
+		</item>
+		<item label="QVKbd" icon="qvkbd">
+			<action name="Execute"><command>qvkbd</command></action>
+		</item>
+		<item label="Screenshot" icon="org.xfce.screenshooter">
+			<action name="Execute"><command>xfce4-screenshooter</command></action>
+		</item>
+		<item label="Spectacle" icon="spectacle">
+			<action name="Execute"><command>/usr/bin/spectacle</command></action>
+		</item>
+		<item label="Xarchiver" icon="xarchiver">
+			<action name="Execute"><command>xarchiver</command></action>
+		</item>
+		<item label="XColor" icon="xcolor">
+			<action name="Execute"><command>xcolor -s</command></action>
+		</item>
+	</menu> <!-- Accessories -->
+	<menu id="Development" label="Development">
+		<item label="CMake" icon="CMakeSetup">
+			<action name="Execute"><command>cmake-gui</command></action>
+		</item>
+		<item label="Cuttlefish" icon="cuttlefish">
+			<action name="Execute"><command>cuttlefish</command></action>
+		</item>
+		<item label="Emacs" icon="emacs">
+			<action name="Execute"><command>emacs</command></action>
+		</item>
+		<item label="Emacs (Client)" icon="emacs">
+			<action name="Execute"><command>sh -c "if [ -n \"\$*\" ]; then exec /usr/bin/emacsclient --alternate-editor= --display=\"\$DISPLAY\" \"\$@\"; else exec emacsclient --alternate-editor= --create-frame; fi" sh</command></action>
+		</item>
+		<item label="Plasma Engine Explorer" icon="plasma">
+			<action name="Execute"><command>plasmaengineexplorer</command></action>
+		</item>
+		<item label="Plasma Global Theme Explorer" icon="preferences-desktop-theme">
+			<action name="Execute"><command>lookandfeelexplorer</command></action>
+		</item>
+		<item label="Plasma Theme Explorer" icon="preferences-desktop-theme">
+			<action name="Execute"><command>plasmathemeexplorer</command></action>
+		</item>
+		<item label="Qt Assistant" icon="assistant">
+			<action name="Execute"><command>assistant</command></action>
+		</item>
+		<item label="Qt Designer" icon="QtProject-designer">
+			<action name="Execute"><command>designer</command></action>
+		</item>
+		<item label="Qt Linguist" icon="linguist">
+			<action name="Execute"><command>linguist</command></action>
+		</item>
+		<item label="Qt QDBusViewer" icon="qdbusviewer">
+			<action name="Execute"><command>qdbusviewer</command></action>
+		</item>
+		<item label="UserFeedback Console" icon="search">
+			<action name="Execute"><command>UserFeedbackConsole</command></action>
+		</item>
+	</menu> <!-- Development -->
+	<menu id="Games" label="Games">
+		<item label="0 A.D." icon="0ad">
+			<action name="Execute"><command>0ad</command></action>
+		</item>
+		<item label="Citra" icon="citra">
+			<action name="Execute"><command>citra-qt</command></action>
+		</item>
+		<item label="Counter-Strike" icon="steam_icon_10">
+			<action name="Execute"><command>steam steam://rungameid/10</command></action>
+		</item>
+		<item label="Fistful of Frags" icon="steam_icon_265630">
+			<action name="Execute"><command>steam steam://rungameid/265630</command></action>
+		</item>
+		<item label="PCSX2" icon="PCSX2">
+			<action name="Execute"><command>pcsx2-qt</command></action>
+		</item>
+		<item label="Star Conflict" icon="steam_icon_212070">
+			<action name="Execute"><command>steam steam://rungameid/212070</command></action>
+		</item>
+		<item label="Steam (Runtime)" icon="steam">
+			<action name="Execute"><command>/usr/bin/steam-runtime</command></action>
+		</item>
+	</menu> <!-- Games -->
+	<menu id="Graphics" label="Graphics">
+		<item label="Drawing" icon="com.github.maoschanz.drawing">
+			<action name="Execute"><command>drawing</command></action>
+		</item>
+		<item label="GNU Image Manipulation Program" icon="/home/test/Downloads/icons/red/icons8-gimp-50-red.png">
+			<action name="Execute"><command>gimp-2.10</command></action>
+		</item>
+		<item label="Gpick" icon="gpick">
+			<action name="Execute"><command>gpick</command></action>
+		</item>
+		<item label="Image Viewer" icon="org.gnome.Loupe">
+			<action name="Execute"><command>loupe</command></action>
+		</item>
+		<item label="XColor" icon="xcolor">
+			<action name="Execute"><command>xcolor -s</command></action>
+		</item>
+	</menu> <!-- Graphics -->
+	<menu id="Internet" label="Internet">
+		<item label="Advanced Network Configuration" icon="preferences-system-network">
+			<action name="Execute"><command>nm-connection-editor</command></action>
+		</item>
+		<item label="KDE Connect" icon="kdeconnect">
+			<action name="Execute"><command>kdeconnect-app</command></action>
+		</item>
+		<item label="KDE Connect Indicator" icon="kdeconnect">
+			<action name="Execute"><command>kdeconnect-indicator</command></action>
+		</item>
+		<item label="KDE Connect SMS" icon="kdeconnect">
+			<action name="Execute"><command>kdeconnect-sms</command></action>
+		</item>
+		<item label="Mercury Browser" icon="mercury-browser">
+			<action name="Execute"><command>mercury-browser</command></action>
+		</item>
+		<item label="Remote Desktop Viewer" icon="preferences-desktop-remote-desktop">
+			<action name="Execute"><command>vinagre</command></action>
+		</item>
+		<item label="Steam (Runtime)" icon="steam">
+			<action name="Execute"><command>/usr/bin/steam-runtime</command></action>
+		</item>
+		<item label="Thorium Browser" icon="thorium-browser">
+			<action name="Execute"><command>/usr/bin/thorium-browser</command></action>
+		</item>
+		<item label="Thorium Shell" icon="/opt/chromium.org/thorium/thorium_shell.png">
+			<action name="Execute"><command>/usr/bin/thorium-shell</command></action>
+		</item>
+		<item label="Transmission" icon="transmission">
+			<action name="Execute"><command>transmission-gtk</command></action>
+		</item>
+	</menu> <!-- Internet -->
+	<menu id="Multimedia" label="Multimedia">
+		<item label="PipeControl" icon="pipecontrol">
+			<action name="Execute"><command>/usr/bin/pipecontrol</command></action>
+		</item>
+		<item label="PulseAudio Volume Control" icon="multimedia-volume-control">
+			<action name="Execute"><command>pavucontrol</command></action>
+		</item>
+		<item label="Qt V4L2 test Utility" icon="qv4l2">
+			<action name="Execute"><command>qv4l2</command></action>
+		</item>
+		<item label="Qt V4L2 video capture utility" icon="qvidcap">
+			<action name="Execute"><command>qvidcap</command></action>
+		</item>
+		<item label="VLC media player" icon="vlc">
+			<action name="Execute"><command>/usr/bin/vlc --started-from-file</command></action>
+		</item>
+		<item label="Volume Icon" icon="multimedia-volume-control">
+			<action name="Execute"><command>volumeicon</command></action>
+		</item>
+	</menu> <!-- Multimedia -->
+
+
+	<menu id="Office" label="Office">
+		<item label="Calendar" icon="org.gnome.Calendar">
+			<action name="Execute"><command>gnome-calendar</command></action>
+		</item>
+	<item label="Calculator" icon="org.gnome.Calculator">
+			<action name="Execute"><command>gnome-calculator</command></action>
+		</item>
+		<item label="Simplenote" icon="com.simplenote.Simplenote">
+			<action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=simplenote --file-forwarding com.simplenote.Simplenote @@u  @@</command></action>
+		</item>
+
+
+
+	</menu> <!-- Office -->
+	<menu id="Settings" label="Settings">
+		<item label="Advanced Network Configuration" icon="preferences-system-network">
+			<action name="Execute"><command>nm-connection-editor</command></action>
+		</item>
+		<item label="Customize Look and Feel" icon="preferences-desktop-theme">
+			<action name="Execute"><command>lxappearance</command></action>
+		</item>
+		<item label="GTK Settings" icon="nwg-look">
+			<action name="Execute"><command>nwg-look</command></action>
+		</item>
+		<item label="KDE Connect Settings" icon="kdeconnect">
+			<action name="Execute"><command>kdeconnect-settings</command></action>
+		</item>
+		<item label="Labwc Config" icon="labwc-tweaks">
+			<action name="Execute"><command>labwc-tweaks</command></action>
+		</item>
+		<item label="nitrogen" icon="nitrogen">
+			<action name="Execute"><command>nitrogen</command></action>
+		</item>
+		<item label="nwg-panel Settings" icon="nwg-panel">
+			<action name="Execute"><command>nwg-panel-config</command></action>
+		</item>
+		<item label="Onboard Settings" icon="onboard">
+			<action name="Execute"><command>onboard-settings</command></action>
+		</item>
+		<item label="Openbox Configuration Manager" icon="obconf">
+			<action name="Execute"><command>obconf</command></action>
+		</item>
+		<item label="Power Manager" icon="org.xfce.powermanager">
+			<action name="Execute"><command>xfce4-power-manager-settings</command></action>
+		</item>
+		<item label="PulseAudio Volume Control" icon="multimedia-volume-control">
+			<action name="Execute"><command>pavucontrol</command></action>
+		</item>
+	</menu> <!-- Settings -->
+	<menu id="System" label="System">
+		<item label="Avahi Zeroconf Browser" icon="network-wired">
+			<action name="Execute"><command>/usr/bin/avahi-discover</command></action>
+		</item>
+		<item label="btop++" icon="btop">
+			<action name="Execute"><command>btop</command></action>
+		</item>
+		<item label="Citra" icon="citra">
+			<action name="Execute"><command>citra-qt</command></action>
+		</item>
+		<item label="conky" icon="conky-logomark-violet">
+			<action name="Execute"><command>conky --daemonize --pause=1</command></action>
+		</item>
+		<item label="Crashed Processes Viewer" icon="tools-report-bug">
+			<action name="Execute"><command>drkonqi-coredump-gui</command></action>
+		</item>
+		<item label="dconf Editor" icon="ca.desrt.dconf-editor">
+			<action name="Execute"><command>dconf-editor</command></action>
+		</item>
+		<item label="Discover" icon="plasmadiscover">
+			<action name="Execute"><command>plasma-discover</command></action>
+		</item>
+		<item label="Dolphin" icon="system-file-manager">
+			<action name="Execute"><command>dolphin</command></action>
+		</item>
+		<item label="File Manager PCManFM" icon="system-file-manager">
+			<action name="Execute"><command>pcmanfm</command></action>
+		</item>
+		<item label="fish" icon="fish">
+			<action name="Execute"><command>fish</command></action>
+		</item>
+		<item label="GParted" icon="gparted">
+			<action name="Execute"><command>/usr/bin/gparted</command></action>
+		</item>
+		<item label="Hardware Locality lstopo" icon="hwloc">
+			<action name="Execute"><command>lstopo</command></action>
+		</item>
+		<item label="Htop" icon="htop">
+			<action name="Execute"><command>htop</command></action>
+		</item>
+		<item label="Info Center" icon="hwinfo">
+			<action name="Execute"><command>kinfocenter</command></action>
+		</item>
+		<item label="jgmenu" icon="jgmenu">
+			<action name="Execute"><command>jgmenu_run</command></action>
+		</item>
+		<item label="kitty" icon="kitty">
+			<action name="Execute"><command>kitty</command></action>
+		</item>
+		<item label="KWalletManager" icon="kwalletmanager">
+			<action name="Execute"><command>kwalletmanager5</command></action>
+		</item>
+		<item label="Labwc Config" icon="labwc-tweaks">
+			<action name="Execute"><command>labwc-tweaks</command></action>
+		</item>
+		<item label="Menu Editor" icon="kmenuedit">
+			<action name="Execute"><command>kmenuedit</command></action>
+		</item>
+		<item label="MultiWriter" icon="org.gnome.MultiWriter">
+			<action name="Execute"><command>gnome-multi-writer</command></action>
+		</item>
+		<item label="nwg-processes" icon="nwg-processes">
+			<action name="Execute"><command>nwg-processes</command></action>
+		</item>
+		<item label="Oracle VM VirtualBox" icon="virtualbox">
+			<action name="Execute"><command>VirtualBox</command></action>
+		</item>
+		<item label="PCSX2" icon="PCSX2">
+			<action name="Execute"><command>pcsx2-qt</command></action>
+		</item>
+		<item label="ranger" icon="utilities-terminal">
+			<action name="Execute"><command>ranger</command></action>
+		</item>
+		<item label="System Monitor" icon="utilities-system-monitor">
+			<action name="Execute"><command>plasma-systemmonitor</command></action>
+		</item>
+		<item label="Terminal" icon="org.gnome.Terminal">
+			<action name="Execute"><command>gnome-terminal</command></action>
+		</item>
+		<item label="UXTerm" icon="xterm-color_48x48">
+			<action name="Execute"><command>uxterm</command></action>
+		</item>
+		<item label="Xfce Terminal" icon="org.xfce.terminal">
+			<action name="Execute"><command>xfce4-terminal</command></action>
+		</item>
+		<item label="XTerm" icon="xterm-color_48x48">
+			<action name="Execute"><command>xterm</command></action>
+		</item>
+		<item label="Yambar" icon="panel">
+			<action name="Execute"><command>yambar</command></action>
+		</item>
+	</menu> <!-- System -->
+	<menu id="Other" label="Other">
+		<item label="logout" icon="(null)">
+			<action name="Execute"><command>/home/test/logout.sh</command></action>
+		</item>
+		<item label="pyradio" icon="(null)">
+			<action name="Execute"><command>/home/test/pyradio.sh</command></action>
+		</item>
+		<item label="Rofi" icon="rofi">
+			<action name="Execute"><command>rofi -show</command></action>
+		</item>
+		<item label="Rofi Theme Selector" icon="rofi">
+			<action name="Execute"><command>rofi-theme-selector</command></action>
+		</item>
+		<item label="SweetHome3D" icon="/home/test/SweetHome3D-7.1/SweetHome3DIcon.png">
+			<action name="Execute"><command>/home/test/SweetHome3D-7.1/SweetHome3D</command></action>
+		</item>
+		<item label="Waydroid" icon="waydroid">
+			<action name="Execute"><command>waydroid first-launch</command></action>
+		</item>
+	</menu> <!-- Other -->
+</menu> <!-- root-menu -->
+</openbox_menu>
