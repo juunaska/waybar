@@ -1,0 +1,130 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "spacing": 0,
+    "height": 14,
+
+    "modules-left": [
+        "custom/swaync"
+    ],
+    "modules-center": [
+   
+    ],
+    "modules-right": [
+        "clock",
+	"network",
+	"pulseaudio",
+	"battery",
+    "custom/specialworkspace"
+    ],
+
+    "custom/menu": {
+        "format": "󰀻",
+        "tooltip": false,
+        "on-click": "~/.config/waybar/./menu.sh"
+    },
+
+
+    "custom/specialworkspace": {
+        "format": "󰄽",
+        "tooltip": false,
+        "on-click": "hyprctl dispatch togglespecialworkspace special"
+    },
+
+
+
+
+   "hyprland/workspaces": {
+        "active-only": false,
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "default": " ",
+            "active": " ",
+            "urgent": "󱓻"
+        },
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        }
+    },
+
+
+
+
+   "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+	"tooltip": false,
+        //"format-alt": "hyprland",
+        "format": "{:%a %d.%m.%y >> %H:%M}",
+	"on-click": "gnome-calendar"
+    },
+
+   "custom/swaync": {
+        "format": "󰿦",
+	"tooltip": false, 
+	"on-click": "swaync-client -t "
+    },
+
+
+
+
+     "network": {
+        "format-wifi" : "󰤨",
+        "format-disconnected" : "󰤭",
+	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-disconn🔇ected": "Disconnected",
+	"on-click": "nm-connection-editor",
+	"interval": 5,
+	"nospacing": 1,
+    },
+
+
+
+    "pulseaudio": {
+        "format": "󰝚",
+        "format-muted": "󰝛",
+        "format-bluetooth": "󰂰",
+        "tooltip-format": "Volume : {volume}%",
+        "format-icons": {
+            "headphone": ""
+        },
+        "on-click": "pamixer -t && hyprctl notify -1 1200 'rgb(21D49E)' 'Audio muted/unmuted'",
+        "on-click-right": "pavucontrol",
+        "scroll-step": 1
+    },
+ 
+
+
+
+
+   "battery": {
+        "format":"  {capacity}%",
+        "format-charging": "  {capacity}%",
+        },
+        "format-full": "",
+        "interval": 5,
+        "tooltip-format": "yo",
+        "tooltip": true,
+	"on-click": "brightnessctl set 3%+",
+	"on-click-right": "brightnessctl set 3%-"
+    },
+
+
+
+
+}
+
+
+
+//
