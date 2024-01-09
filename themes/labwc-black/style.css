@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background-color: transparent;
+  background-color: #44415a;
   transition-property: background-color;
   transition-duration: 0.5s;
   opacity: 1.0;
@@ -27,18 +27,18 @@ window#waybar.hidden {
 }
 
 #memory {
-  color: #dcdcdc;
-  background-color: #111111;
-  border-radius: 13;
+  color: #111111;
+  background-color: #f6c279;
+  border-radius: 4;
   padding: 0px 14px;
   font-size: 19;
   margin: 0px 4px;
 }
 
 #cpu {
-  color: #dcdcdc;
-  background-color: #111111;
-  border-radius: 13;
+  color: #111111;
+  background-color: #eb6f93;
+  border-radius: 4;
   padding: 0px 14px;
   font-size: 19;
   margin: 0px 4px;
@@ -49,16 +49,16 @@ window#waybar.hidden {
 
 
 #clock {
-  color: #dcdcdc;
-  background-color: #111111;
-  border-radius: 13;
+  color: #111111;
+  background-color: #8abfcb;
+  border-radius: 4;
   padding: 0px 14px;
   font-size: 19;
   margin: 0px 4px;
 }
 
 #custom-jgmenu {
-  color: #dcdcdc;
+  color: #111111;
   background-color: transparent;
   border-radius: 3;
   padding: 0px 14px;
@@ -70,7 +70,7 @@ window#waybar.hidden {
   color: #1f1f1f;
   font-size: 19;
   background-color: #ccd2ff;
-  border-radius: 13px; 
+  border-radius: 4px; 
   opacity: 1;
   margin: 0px 4px;
 	}
@@ -93,7 +93,7 @@ window#waybar.hidden {
 	}
 	#battery.charging {
 	  color: #1f1f1f;
-	  background-color: #dcdcdc;
+	  background-color: #75a865;
 	}
 
 
@@ -103,7 +103,7 @@ window#waybar.hidden {
   background-color: #111111;
   padding-left: 18px;
   padding-right: 25px;
-  border-radius: 13px;
+  border-radius: 4px;
   font-size: 19;
   margin: 0px 4px;
 }
@@ -113,7 +113,7 @@ window#waybar.hidden {
   color: #dcdcdc;
   background-color: #111111;
   padding-right: 15;
-  border-radius: 13px;
+  border-radius: 4px;
   font-size: 19;
   margin: 0px 4px;
   padding: 0px 24px;
