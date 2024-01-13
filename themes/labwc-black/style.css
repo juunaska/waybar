@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background-color: #44415a;
+  background-color: #26233a;
   transition-property: background-color;
   transition-duration: 0.5s;
   opacity: 1.0;
@@ -58,7 +58,7 @@ window#waybar.hidden {
 }
 
 #custom-jgmenu {
-  color: #111111;
+  color: #e0def4;
   background-color: transparent;
   border-radius: 3;
   padding: 0px 14px;
@@ -96,11 +96,31 @@ window#waybar.hidden {
 	  background-color: #75a865;
 	}
 
+#custom-firefox {
+  color: #dcdcdc;
+  background-color: transparent;
+  padding-left: 18px;
+  padding-right: 25px;
+  border-radius: 4px;
+  font-size: 19;
+  margin: 0px 4px;
+}
+
+#custom-kitty {
+  color: #dcdcdc;
+  background-color: transparent;
+  padding-left: 18px;
+  padding-right: 25px;
+  border-radius: 4px;
+  font-size: 21;
+  margin: 0px 4px;
+}
+
 
 
 #network {
   color: #dcdcdc;
-  background-color: #111111;
+  background-color: transparent;
   padding-left: 18px;
   padding-right: 25px;
   border-radius: 4px;
@@ -111,7 +131,7 @@ window#waybar.hidden {
 #pulseaudio {
 
   color: #dcdcdc;
-  background-color: #111111;
+  background-color: transparent;
   padding-right: 15;
   border-radius: 4px;
   font-size: 19;

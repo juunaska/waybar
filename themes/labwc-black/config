@@ -5,19 +5,34 @@
     "height": 14,
 
     "modules-left": [
+        "custom/jgmenu",
     ],
     "modules-center": [
-        "custom/jgmenu",
    
     ],
     "modules-right": [
+	"custom/firefox",
+	"custom/kitty",
+	"network",
+	"pulseaudio",
         "clock",
 	"memory",
 	"cpu",
-	"network",
-	"pulseaudio",
 	"battery",
     ],
+
+
+   "custom/firefox": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "firefox"
+    },
+
+   "custom/kitty": {
+        "format": "󰄛",
+	"tooltip": false, 
+	"on-click": "kitty"
+    },
 
    "clock": {
         "tooltip-format": "<tt>{calendar}</tt>",
@@ -44,7 +59,7 @@
 
 
    "custom/jgmenu": {
-        "format": "󰿦  m e n u",
+        "format": "󰐅  m e n u",
 	"tooltip": false, 
 	"on-click": "jgmenu_run"
     },
